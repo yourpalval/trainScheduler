@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Astrology Calendar</title>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row" id="indexHeading">
+            <div class="col-md-12">
+    <h1>Astrology Calendar</h1>
+    <!-- end of row -->
+    </div>
+    <div class="row" id="calendarDiv">
+    <!-- end of container-->
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+ <div class="container">
+
+        <br>
+    
+        <!-- Jumbotron -->
+        <div class="jumbotron">
+          <h1 class="text-center">The Stars Are on the Move!</h1>
+        </div>
+    
+        <div class="row">
+    
+          <!-- Chart -->
+          <div class="col-lg-6">
+            <div class="card card-default">
+              <div class="card-heading">
+                <h3 class="card-title">Planetary Transit Schedule</h3>
+              </div>
+              <div class="card-body">
+    
+                <!-- Sign-up Form (note the various input "types")-->
+    
+                <form role="form">
+                  <div class="form-group row">
+                    <label for="planet">Planet:</label>
+                    <input class="form-control" id="planet" type="text">
+                  </div>
+                  <div class="form-group row">
+                    <label for="sign">Sign:</label>
+                    <input class="form-control" id="sign" type="text">
+                  </div>
+                  <div class="form-group row">
+                    <label for="position">Current Position:</label>
+                    <input class="form-control" id="position" type="text">
+                  </div>
+                  <div class="form-group row">
+                    <label for="frequency">Frequency:</label>
+                    <textarea class="form-control" rows="5" id="frequency"></textarea>
+                  </div>
+                  <button class="btn btn-default" id="add-transit" type="submit">Submit</button>
+                </form>
+    
+              </div>
+    
+            </div>
+    
+          </div>
+    
+          <!-- Most Recent Member card -->
+          <div class="col-lg-6">
+            <div class="card card-default">
+              <div class="card-heading">
+                <h3 class="card-title">Transit Inquiry</h3>
+              </div>
+              <div class="card-body" id="Transit-Schedule">
+                <h2 id="planet-display"></h2>
+                <h4 id="sign-display"></h4>
+                <h4 id="position-display"></h4>
+                <p id="frequency-display"></p>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+    
+      </div>
+    
+    
+</body>
+</html>
